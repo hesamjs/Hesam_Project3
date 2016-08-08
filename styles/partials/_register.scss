@@ -1,0 +1,191 @@
+.register {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
+	h4 {
+		padding: 80px 0;
+		font-size: 18px;
+		font-weight: normal;
+
+		span {
+			@extend.italic;
+			font-size: 14px;
+			color: $grey;
+		}
+	}
+}
+
+.plans {
+	display: flex;
+	justify-content: space-between;
+
+	.priceCard {
+			width: calc(25% - 23px);
+			-webkit-box-shadow:inset 0px 0px 0px 1px #ededed;
+		    -moz-box-shadow:inset 0px 0px 0px 1px #ededed;
+		    box-shadow:inset 0px 0px 0px 1px #ededed;
+
+
+		    li {
+		    	height: 50px;
+		    	letter-spacing: 2px;
+		    	color: $grey;
+		    	font-size: 12px;
+		    	display: flex;
+		    	flex-direction: column;
+		    	justify-content: center;
+		    	align-items: center;
+
+		    	&:first-child {
+		    		height: 65px;
+		    		margin-bottom: 20px;
+		    		font-weight: bold;
+		    		text-transform: uppercase;
+		    		color: $black;
+		    		font-size: 14px;
+		    		border-bottom: 1px solid #ededed;
+		    	}
+
+		    	&:last-child {
+		    		height: 170px;
+		    	}
+		    }
+
+		    input {
+		    	width: 160px;
+		    	height: 40px;
+		    	background-color: $black;
+		    	color: #fff;
+		    	border: none;
+		    	letter-spacing: 2px;
+		    	position: relative;
+		    	top: 55px;
+		    	display: none;
+		    	transition: background-color 0.3s;
+
+		    	&:hover {
+		    		background-color: $yellow;
+		    	}
+		    }
+
+			&:hover {
+				-webkit-box-shadow:inset 0px 0px 0px 1px #ededed, 0px 0px 10px #ededed;
+			    -moz-box-shadow:inset 0px 0px 0px 1px #ededed, 0px 0px 10px #ededed;
+			    box-shadow:inset 0px 0px 0px 1px #ededed, 0px 0px 10px #ededed;
+			    position: relative;
+			    bottom: 20px;
+
+			    input {
+			    	display: block;
+			    }
+			}
+	}
+
+	.dollar {
+		position: relative;
+		left: -25px;
+
+		h2 {
+			font-size: 50px;
+			font-weight: normal;
+		}
+
+		p {
+			position: absolute;
+			left: -20px;
+			top: 0;
+			color: $black;
+		}
+
+		h5 {
+
+			@extend.italic;
+			position: absolute;
+			bottom: 10px;
+			right: -67px;
+			color: $grey;
+		}
+	}	
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+	.plans {
+		.priceCard {
+			width: calc(25% - 8px);
+
+			li {
+		    	height: 30px;
+		    	letter-spacing: 2px;
+		    	color: $grey;
+		    	font-size: 10px;
+
+		    	&:first-child {
+		    		height: 35px;
+		    		margin-bottom: 10px;
+		    		font-size: 11px;
+		    	}
+
+		    	&:last-child {
+		    		height: 110px;
+		    	}
+			}
+
+			input {
+		    	width: 100px;
+		    	height: 30px;
+		    	background-color: $black;
+		    	color: #fff;
+		    	border: none;
+		    	letter-spacing: 2px;
+		    	position: relative;
+		    	top: 35px;
+		    }
+		}
+
+		.dollar {
+			left: -25px;
+
+			h2 {
+				font-size: 24px;
+			}
+
+			p {
+				position: absolute;
+				left: -20px;
+				top: 0;
+				color: $black;
+			}
+
+			h5 {
+				bottom: 10px;
+				right: -67px;
+			}
+		}	
+
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+	.plans {
+		flex-direction: column;
+		justify-content: center;
+
+		.priceCard {
+			width: 50%;
+			margin: 20px auto;
+		}
+	}
+
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+}

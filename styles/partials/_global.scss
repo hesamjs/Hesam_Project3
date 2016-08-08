@@ -1,0 +1,117 @@
+// colors
+
+$black: #141414;
+$grey: #6f6f6f;
+$darkGrey: #2f2f2f;
+$yellow: #eeb013;
+
+// fonts
+
+$hFont: 'Montserrat', sans-serif;
+$pFont: 'Crimson Text', serif;
+
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	// flex-grow: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $hFont;
+	font-weight: bold;
+	color: #141414;
+}
+
+p {
+	font-family: $hFont;
+	font-size: 18px;
+	font-size: normal;
+	line-height: 30px;
+	color: #6f6f6f;
+}
+
+.italic {
+	font-family: $pFont;
+	font-size: 18px;
+}
+
+.blockTitle {
+	width: 300px;
+	margin: 0 auto;
+	padding-top: 90px;
+	font-size: 18px;
+	text-align: center;
+	
+	h4 {
+		text-transform: uppercase;
+		padding-bottom: 20px;
+	}
+
+	p {
+		font-family: $pFont;
+		padding-top: 7px;
+	}
+
+	.hammer {
+		width: 64px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.hammer:before {
+		content: " ";
+		width : 80px;
+		height: 1px;
+		position: absolute;
+		left: -80px;
+		top: 15px;
+		background-color: #d0d0d0;
+	}
+
+	.hammer:after {
+		content: " ";
+		width : 80px;
+		height: 1px;
+		position: absolute;
+		left: 64px;
+		top: 15px;
+		background-color: #d0d0d0;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1100px) {
+	.container {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+
+}

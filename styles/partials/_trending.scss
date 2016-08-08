@@ -1,0 +1,79 @@
+.trending ul {
+	padding: 30px 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		width: calc(33.3% - 20px);
+		margin-right: 30px;
+		padding-top: 50px;
+		padding-bottom: 30px;
+		display: flex;
+		align-items: flex-start;
+
+		img {
+			padding-right: 50px;
+			padding-left: 20px;
+		}
+
+		p {
+			font-size: 13px;
+		}
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3) {
+			border-bottom: 1px solid #ededed;
+		}
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+	.trending ul {
+		li {
+			width: calc(50% - 15px);
+			border-bottom: 1px solid #ededed;
+
+			&:nth-child(3n) {
+				margin-right: 30px;
+			}
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+	.trending ul {
+		li {
+			width: 100%;
+
+			&:nth-child(3n) {
+				margin-right: 30px;
+			}
+
+			&:nth-child(2n) {
+				margin-right: 30px;
+			}
+		}
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+
+}

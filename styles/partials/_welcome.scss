@@ -1,0 +1,98 @@
+.welcome {
+	padding-top: 120px;
+
+	.zapVertical {
+		padding-left: 100px;
+		padding-right: 130px;
+	}
+
+	.welcomeContent {
+		display: flex;
+		flex-direction: column;
+
+		h3 {
+			padding: 30px 0;
+		}
+	}
+
+
+	.btn {
+		width: 250px;
+		height: 65px;
+		background-color: #fff;
+		border: 1px solid #141414;
+		font-family: $hFont;
+		font-size: 14px;
+		letter-spacing: 5px;
+		margin-top: 50px;
+
+		&:hover {
+			background-color: $yellow;
+			color: #fff;
+			border: none;
+		}
+	}
+}
+
+.welcomeContent ul {
+
+	padding-top: 40px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		display: flex;
+		margin: 20px 0;
+
+		.icon {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			-webkit-box-shadow: inset 0 0 0 2px #d8d8d8;
+		 	-moz-box-shadow: inset 0 0 0 2px #d8d8d8;
+		 	box-shadow: inset 0 0 0 2px #d8d8d8;
+		 	display: flex;
+		 	align-items: center;
+		 	justify-content: center;
+		}
+
+		h5 {
+			padding: 20px 30px;
+		}
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	
+	.welcome {
+		.zapVertical {
+			display: none;
+		}
+
+		.welcomeContent {
+			width: 90%;
+			padding: 5px;
+
+			ul {
+				flex-direction: column;
+			}
+		}
+	}
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+
+}
